@@ -35,4 +35,49 @@ button[data-stop] {
   width: 100px;
   height: 60px;
   font-size: large;
+  border-radius: 8px;
+}
+button[data-stop] {
+  margin-left: 40px;
+}
+#datetime-picker {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  padding-left: 18px;
+  margin-right: 20px;
+  border-radius: 8px;
+
+}
+.input-start {
+  display: flex;
+  justify-content: center;
+}
+.timer {
+display: flex;
+justify-content: space-between;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+width: 320px;
+}
+.field {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+.value {
+font-weight: 500;
+font-size: 60px;
+
+}
+.label {
+font-weight: 400;
+font-size: 20px;
+
+}
+.second {
+  color: red;
 }
