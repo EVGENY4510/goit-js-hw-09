@@ -11,7 +11,7 @@ const valueSecondsEl = document.querySelector('span[data-seconds]');
 
 btnStartEl.disabled = true;
 btnStartEl.style.borderColor = 'currentcolor';
-const date = Date.now();
+
 let timerId = null;
 
 const options = {
@@ -20,7 +20,8 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    if (selectedDates[0].getTime() < date) {
+    const date = Date.now();
+    if (selectedDates[0].getTime() <= date) {
       btnStartEl.disabled = true;
 
       Notiflix.Notify.failure('Please choose a date in the future');
